@@ -36,13 +36,13 @@ Total rows: 1338
 
 ### Features
 
-* **age** — Age of primary beneficiary
-* **sex** — Gender (male/female)
-* **bmi** — Body Mass Index
-* **children** — Number of dependents
-* **smoker** — Smoking status (yes/no)
-* **region** — Residential region (NE, NW, SE, SW)
-* **charges** — Target variable; total medical cost billed
+* age - Age of primary beneficiary
+* sex - Gender (male/female)
+* bmi - Body Mass Index
+* children - Number of dependents
+* smoker - Smoking status (yes/no)
+* region - Residential region (NE, NW, SE, SW)
+* charges - Target variable; total medical cost billed
 
 ### Common Uses
 
@@ -75,7 +75,7 @@ Total rows: 1338
 
 The project compares a wide set of models:
 
-Linear and Regularized Models**
+Linear and Regularized Models
 
 * Linear Regression
 * Ridge, Lasso, ElasticNet
@@ -90,7 +90,7 @@ Tree-Based Models
 * LightGBM
 * CatBoost
 
-Ensemble Techniques**
+Ensemble Techniques
 
 * Gradient Boosting with hyperparameter tuning
 * Log-transform regression
@@ -111,9 +111,9 @@ Diagnostics
 
 ---
 
-## Final Model & Results**
+## Final Model & Results
 
-After evaluating all models, **CatBoost** delivered the strongest performance.
+After evaluating all models, CatBoost delivered the strongest performance.
 
 ### Final Metrics
 
@@ -123,7 +123,7 @@ After evaluating all models, **CatBoost** delivered the strongest performance.
 | Gradient Boosting (Tuned) | ~4620     |
 | LightGBM                  | ~5002     |
 | Stacking Model            | ~4434     |
-| **CatBoost (Best)**       | **~4426** |
+| CatBoost (Best)       | ~4426 |
 
 ### Why CatBoost Won
 
@@ -140,12 +140,12 @@ After evaluating all models, **CatBoost** delivered the strongest performance.
 
 SHAP analysis revealed that:
 
-* **Smoker** is by far the strongest predictor of insurance cost
-* **Age** increases costs consistently
-* **BMI** and **BMI²** capture obesity-related risk
-* **Age × BMI** interactions matter
-* **Region** has mild effect
-* **Sex** and **children** have minimal impact
+* Smoker is by far the strongest predictor of insurance cost
+* Age increases costs consistently
+* BMI and BMI² capture obesity-related risk
+* Age × BMI interactions matter
+* Region has mild effect
+* Sex and children have minimal impact
 
 These patterns align with real-world medical cost dynamics.
 
@@ -165,7 +165,7 @@ This behavior is expected in insurance forecasting tasks.
 
 ---
 
-## Future Improvements**
+## Future Improvements
 
 Potential enhancements:
 
