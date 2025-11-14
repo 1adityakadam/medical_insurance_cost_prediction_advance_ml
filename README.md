@@ -1,5 +1,5 @@
 
-# **Medical Insurance Cost Prediction (Advanced ML Pipeline)**
+# Medical Insurance Cost Prediction (Advanced ML Pipeline)
 
 Predicting healthcare insurance charges using advanced machine learning techniques.
 
@@ -23,18 +23,18 @@ This project builds a complete ML pipeline to model medical insurance costs base
 
 ---
 
-## ** Project Goal**
+## Project Goal
 
 To build an end-to-end regression system that predicts an individual’s medical insurance charges using demographic and health-related variables. The focus is on model accuracy, interpretability, and industry-standard ML workflow practices.
 
 ---
 
-## ** Dataset Overview**
+## Dataset Overview
 
 Source: Medical Insurance Cost Dataset
-Total rows: **1338**
+Total rows: 1338
 
-### **Features**
+### Features
 
 * **age** — Age of primary beneficiary
 * **sex** — Gender (male/female)
@@ -44,7 +44,7 @@ Total rows: **1338**
 * **region** — Residential region (NE, NW, SE, SW)
 * **charges** — Target variable; total medical cost billed
 
-### **Common Uses**
+### Common Uses
 
 * Regression modeling
 * Insurance pricing research
@@ -54,16 +54,16 @@ Total rows: **1338**
 
 ---
 
-## ** Methodology**
+## Methodology
 
-### **1. Exploratory Data Analysis (EDA)**
+### 1. Exploratory Data Analysis (EDA)
 
 * Distribution plots of features
 * Pairplots and correlation heatmaps
 * Boxplots of charges across categories
 * Statistical tests (t-tests, correlation metrics)
 
-### **2. Data Preprocessing**
+### 2. Data Preprocessing
 
 * Train–test split
 * StandardScaler for numeric features
@@ -71,17 +71,17 @@ Total rows: **1338**
 * ColumnTransformer pipeline
 * Polynomial and interaction features
 
-### **3. Models Implemented**
+### 3. Models Implemented
 
 The project compares a wide set of models:
 
-**Linear and Regularized Models**
+Linear and Regularized Models**
 
 * Linear Regression
 * Ridge, Lasso, ElasticNet
 * Polynomial Regression
 
-**Tree-Based Models**
+Tree-Based Models
 
 * Random Forest
 * GradientBoostingRegressor
@@ -90,19 +90,19 @@ The project compares a wide set of models:
 * LightGBM
 * CatBoost
 
-**Ensemble Techniques**
+Ensemble Techniques**
 
 * Gradient Boosting with hyperparameter tuning
 * Log-transform regression
 * Quantile regression (95th percentile)
 * Stacking ensemble (CatBoost + LightGBM + GBR with Ridge meta-learner)
 
-**Explainability**
+Explainability
 
 * SHAP summary plots
 * SHAP dependence analysis
 
-**Diagnostics**
+Diagnostics
 
 * Residual vs. prediction plots
 * Residual distribution
@@ -111,11 +111,11 @@ The project compares a wide set of models:
 
 ---
 
-## **🏆 Final Model & Results**
+## Final Model & Results**
 
 After evaluating all models, **CatBoost** delivered the strongest performance.
 
-### **Final Metrics**
+### Final Metrics
 
 | Model                     | RMSE      |
 | ------------------------- | --------- |
@@ -125,7 +125,7 @@ After evaluating all models, **CatBoost** delivered the strongest performance.
 | Stacking Model            | ~4434     |
 | **CatBoost (Best)**       | **~4426** |
 
-### **Why CatBoost Won**
+### Why CatBoost Won
 
 * Handles categorical data natively
 * Captures nonlinear interactions automatically
@@ -136,7 +136,7 @@ After evaluating all models, **CatBoost** delivered the strongest performance.
 
 ---
 
-## **📊 SHAP Insights (Feature Importance)**
+## SHAP Insights (Feature Importance)
 
 SHAP analysis revealed that:
 
@@ -151,7 +151,7 @@ These patterns align with real-world medical cost dynamics.
 
 ---
 
-## ** Residual Diagnostics**
+## Residual Diagnostics
 
 Residual analysis shows:
 
@@ -165,7 +165,7 @@ This behavior is expected in insurance forecasting tasks.
 
 ---
 
-## ** Future Improvements**
+## Future Improvements**
 
 Potential enhancements:
 
